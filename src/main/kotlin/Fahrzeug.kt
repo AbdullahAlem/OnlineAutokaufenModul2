@@ -5,7 +5,7 @@ fun fahrzeugVerkaufen(kunde: Kunde){
 
     if (kunde.budget >= preis){
         kunde.budget = kunde.budget-preis
-        println("Das Fahrzeug wurde von ${kunde.vorname} ${kunde.nachname} gekauft")
+        println("Das Fahrzeug $name wurde von ${kunde.vorname} ${kunde.nachname} gekauft")
         println("Ihr Restliches Budget beträgt: ${kunde.budget}")
     }
         else {
@@ -13,7 +13,7 @@ fun fahrzeugVerkaufen(kunde: Kunde){
         }
 }
 fun probeFahrt(kunde: Kunde) {
-    println("Das Fahrzeug wird vom Kunden ${kunde.vorname} ${kunde.nachname} Probe gefahren")
+    println("Das Fahrzeug $name wird vom Kunden ${kunde.vorname} ${kunde.nachname} Probe gefahren")
     if (kunde.alter >= 18) {
 
     } else {
