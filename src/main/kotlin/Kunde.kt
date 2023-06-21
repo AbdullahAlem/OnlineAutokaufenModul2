@@ -1,28 +1,23 @@
+
+// Klasse Kunde mit Vor- und Nachname, Budget, Alter und Passwort
 class Kunde(var vorname: String, var nachname: String, var budget: Double, var alter: Int, var passwort: String) {
 
-    fun begruessung() {
-        println("Hallo ich bin: $vorname,$nachname")
-    }
-    fun logIn() {
-        do {
-            println("Geben Sie ihr Passwort ein:")
-            var pw: String = readln()
-            if (passwort == pw) {
-                Thread.sleep(2000)
-                println("Erfolgreich eingeloggt")
-               println()
-                break
-            } else {
-                println("Falsches Passwort")
-            }
-        } while (true)
+    // Funktion Begrüßung, Kunde stellt sich vor mit Vor- und Nachnamen
+   // fun begruessung() {
+      //  println("Hallo ich bin: $vorname,$nachname")
     }
 
+    //Funktion logIn
+
+
+    // Funktion fahrzeugAuswahl
     fun fahrzeugAuswahl() {
-        println("Suchen Sie das Fahrzeug aus das Sie kaufen möchten:")
+        // hier soll der Kunde das Fahrzeug, welches er kaufen möchte aussuchen
+        println("Suchen Sie das Fahrzeug aus, dass Sie kaufen möchten:")
     }
 
+    // Funktion kaufAbschluss
     fun kaufAbschluss() {
-        println("Vielen Dank das Sie sich für Golden Syntax entschieden haben ")
+        // Danksagung an den Kunden für kauf eines Fahrzeugs und Verabschiedung
+        println("Vielen Dank! Das Sie sich für Golden Syntax entschieden haben ")
     }
-}
