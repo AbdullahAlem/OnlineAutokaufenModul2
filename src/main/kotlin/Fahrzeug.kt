@@ -1,4 +1,3 @@
-
 // Offene Klasse Fahrzeug mit Name, Model, Typ, Farbe und Preis
 open class Fahrzeug(var name: String, var model: String, var typ: String, var farbe: String, var preis: Double) {
 

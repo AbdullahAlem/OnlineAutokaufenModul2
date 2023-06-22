@@ -27,9 +27,8 @@ class FahrzeugShop(var fahrzeuge: MutableList<Fahrzeug>, var kunden: MutableList
 
     // Fahrzeugliste
     var fahrzeugListe: MutableList<Fahrzeug> = mutableListOf(fahrzeug1, fahrzeug2, fahrzeug3, fahrzeug4, fahrzeug5)
+
     // Kundenliste
     var kundenListe: MutableList<Kunde> = mutableListOf(kunde1, kunde2, kunde3, kunde4, kunde5)
     var auswahlKunde1: Kunde = Kunde("Mike", "Müller", 50000.00, 33, "456")
-
 }
-

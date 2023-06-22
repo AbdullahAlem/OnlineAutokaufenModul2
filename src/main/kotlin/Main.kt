@@ -2,9 +2,6 @@ import kotlin.system.exitProcess
 
 fun main() {
 
-    //var fahrzeugShop = FahrzeugShop(fahrzeugListe, kundenListe)
-    //fahrzeugShop.fahrzeugShop()
-
     Thread.sleep(2000)
     // Begrüßung des Kunden
     println("----- Willkommen bei Golden Syntax -----")
@@ -23,21 +20,19 @@ fun main() {
         for (Kundei in kundenListe) {
 
             if (name == Kundei.nachname) {
-                Thread.sleep(2000)
+                Thread.sleep(1000)
 
                 nameRichtig = true
                 auswahlKunde1 = Kundei
                 break
             }
         }
-        Thread.sleep(2000)
 
     } while (nameRichtig == false)
-    Thread.sleep(2000)
-
+    Thread.sleep(1000)
 
     var passWort: String
-    Thread.sleep(2000)
+    Thread.sleep(1000)
     //do while passwort
     var passWortRichtig: Boolean = false
     do {
@@ -48,7 +43,7 @@ fun main() {
         for (Kundei in kundenListe) {
 
             if (passWort == Kundei.passwort) {
-                Thread.sleep(2000)
+                Thread.sleep(1000)
 
                 passWortRichtig = true
                 auswahlKunde1 = Kundei
@@ -172,7 +167,7 @@ fun main() {
         if (auswahlKunde1.budget <= richtigeAuswahl.preis) {
             zaehler += 1
             println("Ihr Budget reicht leider nicht aus um das Fahrzeug zu kaufen")
-            if (zaehler > 3) {
+            if (zaehler > 2) {
 
                 gefilterteListe = fahrzeugListe
                 for (Fahrzeug in gefilterteListe) {
